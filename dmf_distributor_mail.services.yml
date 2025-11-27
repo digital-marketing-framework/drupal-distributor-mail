@@ -1,0 +1,14 @@
+services:
+  dmf_distributor_mail.core_registry_update_event_subscriber:
+    class: Drupal\dmf_distributor_mail\Registry\EventSubscriber\CoreRegistryUpdateEventSubscriber
+    arguments:
+      - '@dmf_mail.mail_manager'
+    tags:
+      - { name: event_subscriber }
+
+  dmf_distributor_mail.distributor_registry_update_event_subscriber:
+    class: Drupal\dmf_distributor_mail\Registry\EventSubscriber\DistributorRegistryUpdateEventSubscriber
+    arguments:
+      - '@dmf_mail.mail_manager'
+    tags:
+      - { name: event_subscriber }

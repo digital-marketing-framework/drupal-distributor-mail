@@ -1,0 +1,9 @@
+name: 'Anyrel - Distributor Mail'
+type: module
+description: 'Anyrel mail distributor integration for Drupal'
+package: 'Anyrel'
+core_version_requirement: ^10 || ^11
+dependencies:
+  - dmf_distributor_core:dmf_distributor_core
+  - dmf_mail:dmf_mail
+  - dmf_template_engine_twig:dmf_template_engine_twig

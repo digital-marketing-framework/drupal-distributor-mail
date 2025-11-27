@@ -1,0 +1,48 @@
+{
+    "name": "digital-marketing-framework/drupal-distributor-mail",
+    "description": "Anyrel - Mail Distributor - Drupal Integration",
+    "license": "GPL-2.0-or-later",
+    "type": "drupal-module",
+    "keywords": [
+        "drupal",
+        "module",
+        "marketing",
+        "framework",
+        "distributor",
+        "email",
+        "mail"
+    ],
+    "authors": [
+        {
+            "name": "Mediatis AG",
+            "email": "info@mediatis.de",
+            "homepage": "https://www.mediatis.de",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://www.mediatis.de",
+    "require": {
+        "php": "^8.1",
+        "composer/installers": "^1.0 || ^2.0",
+        "digital-marketing-framework/distributor-mail": "^3.0",
+        "digital-marketing-framework/drupal-distributor-core": "^1.0",
+        "digital-marketing-framework/drupal-mail": "^1.0",
+        "digital-marketing-framework/drupal-template-engine-twig": "^1.0",
+        "drupal/core": "^10.0 || ^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\dmf_distributor_mail\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true,
+            "ergebnis/composer-normalize": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "installer-name": "dmf_distributor_mail"
+    }
+}
