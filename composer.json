@@ -42,6 +42,9 @@
         "sort-packages": true
     },
     "extra": {
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        },
         "installer-name": "dmf_distributor_mail"
     }
 }
